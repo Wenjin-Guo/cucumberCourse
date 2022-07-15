@@ -1,5 +1,7 @@
 package stepDefinitions;
 
+
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -8,7 +10,7 @@ public class MenuManagementSteps {
     restaurantMenuItem NewMenuItem;
     restaurantMenu LocationMenu = new restaurantMenu();
     @Given("I have a menu item with name {string} and price {int}")
-    public void i_have_a_menu_item_with_name_and_price(String menuItemName, Integer price) {
+    public void i_have_a_menu_item_with_name_and_price(String menuItemName,Integer price) {
 
         NewMenuItem = new restaurantMenuItem(menuItemName,menuItemName,price);
         System.out.println("Step 1");
